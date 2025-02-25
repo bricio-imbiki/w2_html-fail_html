@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Form Submission Check</title>
+</head>
+
+<body>
+    <script>
+        // Get URL parameters
+        const params = new URLSearchParams(window.location.search);
+        const favday = params.getAll('favourite-day')
+        const activities = params.getAll('activities')
+        const name = params.getAll('name')
+
+
+        document.write(`
+        <div style="display: flex; align-items: center">
+            <h4>Selected radio button: </h4>&nbsp;${favday}
+        </div>
+        `);
+
+
+        document.write(`
+        <div style="display: flex; align-items: center">
+            <h4>Selected activities: </h4>&nbsp;${activities}
+        </div>
+        `);
+
+        document.write(`
+        <div style="display: flex; align-items: center">
+            <h4>Name: </h4>&nbsp;${name}
+        </div>
+        `);
+    </script>
+</body>
+
+</html>

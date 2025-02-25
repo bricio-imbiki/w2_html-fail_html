@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<!-- wrong placement -->
+<title Lab - fail html></title>
+
+<head>
+    <!-- wrong placement -->
+    <h1>Let's correct this page</h1>
+</head>
+
+<body>
+    <div style="width: 100%">
+        <section style="background-color: rgb(63, 114, 114);">
+            <h2>Headings</h2>
+            </br>
+            <!-- bad headings -->
+            <h6>Days of the week</h6>
+            <h1>Monday</h1>
+            <h1>Tuesday</h1>
+            <h1>Wednesday
+                <h2>Thursday</h2>
+            </h1>
+            <h5>Friday</h5>
+            <h1>Saturday</h1>
+            <h3>Sunday</h3>
+
+            <section style="background-color: rgb(167, 114, 155);">
+                <h2>imgs</h2>
+                </br>
+                <!-- wrong syntax -->
+                <img src=https://cdn.memes.com/up/71558571535638926/i/1739166515128.jpg/>
+                <img url="1739166512767.jpg" />
+                <hr>
+            </section>
+            <hr>
+        </section>
+
+
+
+        <section style="background-color: rgb(129, 158, 201);">
+            <h2>lists</h2>
+            </br>
+            <!-- wrong nesting -->
+            <li>
+                <ol>1st element</ol>
+                <ol>2nd element</ol>
+                <ol>3rd element</ol>
+            </li>
+            <li>
+                <ul>1st element</ul>
+                <ul>2nd element</ul>
+                <ul>3rd element</ul>
+            </li>
+            <hr>
+        </section>
+
+
+        <h2>links</h2>
+        <section style="background-color: rgb(129, 201, 129);">
+            <!-- wrong syntax -->
+            <a href="visit link1">https://en.wikipedia.org/wiki/Prometheus</a>
+            <br>
+            <a src="https://en.wikipedia.org/wiki/Prometheus">Visit Link2</a>
+            <hr>
+        </section>
+
+        <section style="background-color: rgb(194, 15, 134);">
+            <h2>inputs and labels</h2>
+            </br>
+            <form action="checkform.html" method="GET">
+                <fieldset>
+                    radioa button (only one option possible)
+                    <legend>What is your favorite day of the weekend ?</legend>
+                    <!-- wrong use of name -->
+                    <label> </label>Saturday<input id="indoor" type="checkbox" name="favourite-day" value="saturday" checked>
+                    <label><input id="outdoor" type="checkbox" name="favourite-day" value="sunday"> Sunday</label>
+                </fieldset>
+                <fieldset>
+                    <legend>What do you usually do during that day ?</legend>
+                    <input id="family" type="checkbox" name="activities" value="family" checked> <label for="sport">Spend time with family</label>
+                    <input id="sport" type="checkbox" name="activities" value="sport"> <label for="hangout">Play sport</label>
+                    <input id="hangout" type="checkbox" name="hangout" value="hangout"> <label for="cleanup">Hangout with friends</label>
+                    <input id="games" type="checkbox" name="activities" value="games"> <label for="family">Play video or mobile games</label>
+                    <input id="cleanup" type="checkbox" name="activities" value="cleanup"> <label for="games">Cleanup the house</label>
+                </fieldset>
+                <input required>
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+    </div>
+
+</body>
+
+</html>
